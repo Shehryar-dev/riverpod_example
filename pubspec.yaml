@@ -1,0 +1,94 @@
+name: riverpod_example
+description: "Flutter RiverPod Examples counter and switch btn"
+
+
+publish_to: 'none' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0-171.0.dev
+
+
+
+
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  
+  
+  cupertino_icons: ^1.0.8
+  device_preview: ^1.2.0
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  
+  
+  
+  
+  flutter_lints: ^5.0.0
+
+
+
+
+
+flutter:
+
+  
+  
+  
+  uses-material-design: true
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
