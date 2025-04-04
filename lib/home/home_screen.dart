@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:riverpod_example/examples/counter_app/counter_app.dart';
+import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,7 +44,7 @@ class HomeScreen extends StatelessWidget {
                 Divider(),
                 SizedBox(height: 16,),
                 InkWell(
-                  onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> CounterApp())),
+                  onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> SwitchBtn())),
                   child: Text(
                     'Switch Btn Example',
                     style: Theme.of(context).textTheme.titleLarge!.apply(
