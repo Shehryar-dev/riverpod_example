@@ -1,63 +1,95 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:riverpod_example/examples/counter_app/counter_app.dart';
+import 'package:riverpod_example/examples/slider/slider.dart';
 import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final List<_ExampleItem> examples = [
+      _ExampleItem(
+        title: 'Counter App',
+        subtitle: 'Basic state update using Riverpod',
+        icon: Icons.add,
+        destination: const CounterApp(),
+      ),
+      _ExampleItem(
+        title: 'Switch Button',
+        subtitle: 'Toggle state using Riverpod',
+        icon: CupertinoIcons.switch_camera,
+        destination: const SwitchBtn(),
+      ),
+      _ExampleItem(
+        title: 'Slider Example',
+        subtitle: 'Slider value using Riverpod',
+        icon: Icons.linear_scale_outlined,
+        destination: const SliderWidget(),
+      ),
+      // _ExampleItem(
+      //   title: 'Multiple States',
+      //   subtitle: 'Manage multiple states in one screen',
+      //   icon: Icons.dashboard_customize_outlined,
+      //   destination: const MultipleStateExample(),
+      // ),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue.shade900,
-        title: Row(
+        title: const Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(CupertinoIcons.home),
-            SizedBox(width: 11),
-            Text('Home Screen'),
+            Icon(CupertinoIcons.home, color: Colors.white),
+            SizedBox(width: 10),
+            Text('Riverpod Examples'),
           ],
         ),
+        centerTitle: true,
       ),
-
-      body: Center(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-
-                InkWell(
-                  onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> CounterApp())),
-                  child: Text(
-                    'Counter App',
-                    style: Theme.of(context).textTheme.titleLarge!.apply(
-                      color: Colors.grey,
-                      fontWeightDelta: 1,
-                    ),
-                  ),
-                ),
-                SizedBox(height: 16,),
-                Divider(),
-                SizedBox(height: 16,),
-                InkWell(
-                  onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> SwitchBtn())),
-                  child: Text(
-                    'Switch Btn Example',
-                    style: Theme.of(context).textTheme.titleLarge!.apply(
-                      color: Colors.grey,
-                      fontWeightDelta: 1,
-                    ),
-                  ),
-                ),
-              ],
+      body: ListView.builder(
+        padding: const EdgeInsets.all(20),
+        itemCount: examples.length,
+        itemBuilder: (context, index) {
+          final item = examples[index];
+          return Card(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            elevation: 3,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
             ),
-          ),
-        ),
+            child: ListTile(
+              leading: Icon(item.icon, size: 30, color: Colors.blue.shade900),
+              title: Text(item.title),
+              subtitle: Text(item.subtitle),
+              trailing: const Icon(Icons.arrow_forward_ios_rounded),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => item.destination),
+                );
+              },
+            ),
+          );
+        },
       ),
     );
   }
+}
+
+class _ExampleItem {
+  final String title;
+  final String subtitle;
+  final IconData icon;
+  final Widget destination;
+
+  const _ExampleItem({
+    required this.title,
+    required this.subtitle,
+    required this.icon,
+    required this.destination,
+  });
 }
