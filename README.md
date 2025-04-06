@@ -1,5 +1,4 @@
 
-```markdown
 # 🌱 Riverpod Example Repository
 
 This repository contains simple and clean examples of how to use [**Riverpod**](https://riverpod.dev/) in your Flutter applications for effective and scalable state management.
