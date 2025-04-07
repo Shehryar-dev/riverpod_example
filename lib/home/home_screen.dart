@@ -4,6 +4,8 @@ import 'package:riverpod_example/examples/counter_app/counter_app.dart';
 import 'package:riverpod_example/examples/slider/slider.dart';
 import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
 
+import '../examples/multiple_states/multi_states_screen.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,12 +31,12 @@ class HomeScreen extends StatelessWidget {
         icon: Icons.linear_scale_outlined,
         destination: const SliderWidget(),
       ),
-      // _ExampleItem(
-      //   title: 'Multiple States',
-      //   subtitle: 'Manage multiple states in one screen',
-      //   icon: Icons.dashboard_customize_outlined,
-      //   destination: const MultipleStateExample(),
-      // ),
+      _ExampleItem(
+        title: 'Multiple States',
+        subtitle: 'Manage multiple states in one screen',
+        icon: Icons.dashboard_customize_outlined,
+        destination: const MultipleStateExample(),
+      ),
     ];
 
     return Scaffold(
