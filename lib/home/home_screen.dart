@@ -37,6 +37,12 @@ class HomeScreen extends StatelessWidget {
         icon: Icons.dashboard_customize_outlined,
         destination: const MultipleStateExample(),
       ),
+      _ExampleItem(
+        title: 'Todo App (UI)',
+        subtitle: 'Basic UI - Add Riverpod yourself',
+        icon: Icons.task_alt,
+        destination:  Container(),
+      ),
     ];
 
     return Scaffold(
