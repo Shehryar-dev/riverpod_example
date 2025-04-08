@@ -32,6 +32,30 @@ An interactive switch button example using `StateProvider<bool>`.
 
 ---
 
+### 3. 🎚️ Slider & Opacity Example
+
+An animated UI where a slider controls the opacity of a colored container using `StateProvider<double>`.
+
+- ✅ Smooth slider interaction
+- ✅ Real-time opacity change
+- ✅ Clean and minimal implementation
+
+> 📂 Path: `lib/examples/slider_widget/`
+
+---
+
+### 4. 🎨 Multi State Example (Radial, Sweep, Linear Gradient)
+
+An advanced example managing multiple UI states using a **single `StateProvider` with custom model class**.
+
+- ✅ Uses `AppState` model with `copyWith()`
+- ✅ One provider, multiple sliders (Radial, Sweep, Linear)
+- ✅ Each slider affects different gradient container in UI
+
+> 📂 Path: `lib/examples/multiple_states/`
+
+---
+
 ## 🚀 Getting Started
 
 ### 🔧 Setup
