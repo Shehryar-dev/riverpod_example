@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:riverpod_example/examples/counter_app/counter_app.dart';
 import 'package:riverpod_example/examples/slider/slider.dart';
 import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
+import 'package:riverpod_example/examples/text_field_example/text_field.dart';
 
 import '../examples/multiple_states/multi_states_screen.dart';
 
@@ -36,6 +37,12 @@ class HomeScreen extends StatelessWidget {
         subtitle: 'Manage multiple states in one screen',
         icon: Icons.dashboard_customize_outlined,
         destination: const MultipleStateExample(),
+      ),
+      _ExampleItem(
+        title: 'Password TextField',
+        subtitle: 'Riverpod with StateNotifierProvider',
+        icon: Icons.password,
+        destination: const TextFieldWidget(),
       ),
       _ExampleItem(
         title: 'Todo App (UI)',

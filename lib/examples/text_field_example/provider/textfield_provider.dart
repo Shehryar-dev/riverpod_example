@@ -12,6 +12,10 @@ class TextFieldNotifier extends StateNotifier<TextFieldState>{
   void search(String query){
     state = state.copyWith(controller: query);
   }
+  void toggleVisibility() {
+    state = state.copyWith(isVisible: !state.isVisible);
+  }
+
 }
 
 class TextFieldState{
