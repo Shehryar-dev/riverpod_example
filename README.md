@@ -68,6 +68,42 @@ An elegant password input field with eye icon to toggle visibility. Built using 
 > 📂 Path: `lib/examples/text_field_example/`
 ---
 
+### 6. 📄 ToDo App
+
+A fully functional task management app using StateNotifierProvider for managing a list of tasks. This example demonstrates the use of advanced provider logic, separation of concerns, and widget composition.
+
+- ✅ Add, edit, and delete todos
+- ✅ Dynamic state management with StateNotifier
+- ✅ Clean architecture using models, providers, widgets, and screens
+- ✅ Responsive and minimal UI
+
+> 📂 Path: lib/examples/todo_app/
+
+## 📂 Project Structure:
+
+```
+lib/examples/todo_app/
+│
+├── models/
+│   └── todo_model.dart          # Data model for todo items
+│
+├── providers/
+│   └── todo_provider.dart       # StateNotifier managing todo list
+│
+├── screens/
+│   ├── todo_screen.dart         # Main screen displaying todo list
+│   └── add_edit_screen.dart     # Screen to add or edit a todo
+│
+├── widgets/
+│   └── todo_tile.dart           # Reusable tile widget for todos
+│
+└── main.dart                    # App entry point
+```
+
+---
+
+
+
 ## 🚀 Getting Started
 
 ### 🔧 Setup
