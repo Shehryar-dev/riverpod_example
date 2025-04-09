@@ -56,6 +56,18 @@ An advanced example managing multiple UI states using a **single `StateProvider`
 
 ---
 
+### 5. 🔐 Password TextField with Toggle Visibility
+
+An elegant password input field with eye icon to toggle visibility. Built using `StateNotifierProvider` for managing input value and visibility state.
+
+- ✅ Uses `TextFieldState` model with `copyWith()`
+- ✅ Real-time preview of input text
+- ✅ Toggle password visibility using eye icon
+- ✅ Clean state separation in notifier
+
+> 📂 Path: `lib/examples/text_field_example/`
+---
+
 ## 🚀 Getting Started
 
 ### 🔧 Setup
@@ -96,7 +108,7 @@ Feel free to fork the repo and add your own examples. If you make something cool
 
 ## 🧑‍💻 Author
 
-**Shehryar Saleem**  
+**Shehriyar Saleem**  
 [GitHub](https://github.com/Shehryar-dev) | [LinkedIn](https://www.linkedin.com/in/shehryarkhandiv)
 
 ---
