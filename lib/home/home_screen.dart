@@ -4,6 +4,7 @@ import 'package:riverpod_example/examples/counter_app/counter_app.dart';
 import 'package:riverpod_example/examples/slider/slider.dart';
 import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
 import 'package:riverpod_example/examples/text_field_example/text_field.dart';
+import 'package:riverpod_example/examples/todo_app/screen/todo_screen.dart';
 
 import '../examples/multiple_states/multi_states_screen.dart';
 
@@ -48,7 +49,7 @@ class HomeScreen extends StatelessWidget {
         title: 'Todo App (UI)',
         subtitle: 'Basic UI - Add Riverpod yourself',
         icon: Icons.task_alt,
-        destination:  Container(),
+        destination: TodoScreen(),
       ),
     ];
 

@@ -13,7 +13,7 @@ class  TodoNotifier extends StateNotifier<List<Todo>>{
 
   void addTodo(String name){
     final item = Todo(id: DateTime.now().toString(), name: name);
-    state.add(item);
+    state = [...state, item];
   }
 
 
