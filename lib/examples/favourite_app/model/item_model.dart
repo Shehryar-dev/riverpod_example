@@ -8,5 +8,4 @@ class Item{
   Item copyWith({String? id, String? name, bool? isFavourite}){
     return Item(id: id ?? this.id, name: name ?? this.name, isFavourite: isFavourite ?? this.isFavourite);
   }
-
 }
