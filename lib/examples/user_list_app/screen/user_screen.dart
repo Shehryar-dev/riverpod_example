@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/examples/future_provider/provider/user_list_provider.dart';
+import 'package:riverpod_example/examples/user_list_app/provider/user_list_provider.dart';
 
 class UserScreen extends ConsumerWidget {
   const UserScreen({super.key});

@@ -2,8 +2,8 @@
 import 'dart:convert';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/examples/future_provider/model/user_model.dart';
 import 'package:http/http.dart' as http;
+import 'package:riverpod_example/examples/user_list_app/model/user_model.dart';
 
 final userListProvider = FutureProvider<UserModel>((ref) async{
   final url = 'https://reqres.in/api/users?page=2';
