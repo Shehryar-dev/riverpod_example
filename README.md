@@ -151,7 +151,16 @@ lib/examples/user_list_app/
     └── user_screen.dart     # Screen displaying user list with avatar & name
 ```
 ---
+### 9. ⏱ Live Time App (StreamProvider Example)
 
+An example showing how to use `StreamProvider` to handle real-time updates. This app displays the current time updating every second.
+
+- ✅ Uses `Stream.periodic` to emit current `DateTime` every second
+- ✅ Real-time updates on screen
+- ✅ Demonstrates stream handling, loading & error state
+
+> 📂 Path: lib/examples/time_app/
+---
 ## 🚀 Getting Started
 
 ### 🔧 Setup
