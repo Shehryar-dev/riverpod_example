@@ -158,6 +158,10 @@ An example showing how to use `StreamProvider` to handle real-time updates. This
 - ✅ Uses `Stream.periodic` to emit current `DateTime` every second
 - ✅ Real-time updates on screen
 - ✅ Demonstrates stream handling, loading & error state
+- ✅ Fully responsive for any screen
+- 🕓 Bold centered time (HH:MM:SS)
+- 🌌 Dark gradient background
+- ✨ Smooth glass-style card
 
 > 📂 Path: lib/examples/time_app/
 ---
