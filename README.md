@@ -137,9 +137,9 @@ A practical example showing how to fetch user data from an API using `FutureProv
 - ✅ Displays user name, email, and avatar in list
 - ✅ Error and loading handling built-in
 
-> 📂 Path: lib/examples/future_provider/
+> 📂 Path: lib/examples/user_list_app/
 ```
-lib/examples/future_provider/
+lib/examples/user_list_app/
 │
 ├── model/
 │   └── user_model.dart           # Data model for User API response
