@@ -5,6 +5,7 @@ import 'package:riverpod_example/examples/favourite_app/screen/favourite_screen.
 import 'package:riverpod_example/examples/slider/slider.dart';
 import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
 import 'package:riverpod_example/examples/text_field_example/text_field.dart';
+import 'package:riverpod_example/examples/time_app/screen/time_app_screen.dart';
 import 'package:riverpod_example/examples/todo_app/screen/todo_screen.dart';
 import 'package:riverpod_example/examples/user_list_app/screen/user_screen.dart';
 
@@ -65,6 +66,12 @@ class HomeScreen extends StatelessWidget {
         subtitle: 'Fetch Users via FutureProvider',
         icon: Icons.supervised_user_circle,
         destination: UserScreen(),
+      ),
+      _ExampleItem(
+        title: 'Live Time App',
+        subtitle: 'Using StreamProvider for real-time updates',
+        icon: Icons.access_time_filled,
+        destination: TimeScreen(),
       ),
 
     ];
