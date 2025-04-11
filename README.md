@@ -101,8 +101,33 @@ lib/examples/todo_app/
 ```
 
 ---
+### 7. ❤️ Favourite App
 
+A real-world example of search, filter, and mark items as favourite using StateNotifierProvider. This app demonstrates how to:
 
+- ✅ Manage a list of items with dynamic search and favourite toggle
+- ✅ Implement clean filtering logic using a custom state class FavouriteStats
+- ✅ Use PopupMenuButton for filtering between All & Favourite items
+- ✅ Clean architecture with proper model and notifier separation
+- ✅ Smooth UI updates and Riverpod logic separation
+
+> 📂 Path: lib/examples/favourite_app/
+
+## 📂 Project Structure:
+
+```
+lib/examples/favourite_app/
+│
+├── model/
+│   └── item_model.dart           # Data model for each item
+│
+├── provider/
+│   └── favourite_provider.dart   # StateNotifier managing item list, search, filter
+│
+└── screens/
+    └── favourite_screen.dart     # Main screen with search field, filter, and UI
+```
+---
 
 ## 🚀 Getting Started
 
