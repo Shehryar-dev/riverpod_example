@@ -7,6 +7,7 @@ import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
 import 'package:riverpod_example/examples/text_field_example/text_field.dart';
 import 'package:riverpod_example/examples/todo_app/screen/todo_screen.dart';
 
+import '../examples/future_provider/screen/user_screen.dart';
 import '../examples/multiple_states/multi_states_screen.dart';
 
 
@@ -58,6 +59,12 @@ class HomeScreen extends StatelessWidget {
         subtitle: 'Search, Filter & Favourite - Riverpod State Management',
         icon: Icons.favorite,
         destination: FavouriteScreen(),
+      ),
+      _ExampleItem(
+        title: 'User List App',
+        subtitle: 'Fetch Users via FutureProvider',
+        icon: Icons.supervised_user_circle,
+        destination: UserScreen(),
       ),
 
     ];
