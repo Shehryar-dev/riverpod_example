@@ -128,6 +128,29 @@ lib/examples/favourite_app/
     └── favourite_screen.dart     # Main screen with search field, filter, and UI
 ```
 ---
+## 8. 👤 User List App (FutureProvider Example)
+
+A practical example showing how to fetch user data from an API using `FutureProvider`. This demonstrates clean separation of network logic, model, provider, and UI.
+
+- ✅ Uses `FutureProvider` to call REST API (https://reqres.in/api/users?page=2)
+- ✅ Clean JSON to model conversion (`UserModel`, `Data`)
+- ✅ Displays user name, email, and avatar in list
+- ✅ Error and loading handling built-in
+
+> 📂 Path: lib/examples/future_provider/
+```
+lib/examples/future_provider/
+│
+├── model/
+│   └── user_model.dart           # Data model for User API response
+│
+├── provider/
+│   └── user_list_provider.dart    # FutureProvider fetching user data
+│
+└── screens/
+    └── user_screen.dart     # Screen displaying user list with avatar & name
+```
+---
 
 ## 🚀 Getting Started
 
