@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:riverpod_example/examples/counter_app/counter_app.dart';
+import 'package:riverpod_example/examples/favourite_app/screen/favourite_screen.dart';
 import 'package:riverpod_example/examples/slider/slider.dart';
 import 'package:riverpod_example/examples/switch_btn/switch_btn.dart';
 import 'package:riverpod_example/examples/text_field_example/text_field.dart';
@@ -51,6 +52,14 @@ class HomeScreen extends StatelessWidget {
         icon: Icons.task_alt,
         destination: TodoScreen(),
       ),
+
+      _ExampleItem(
+        title: 'Favourite App',
+        subtitle: 'Search, Filter & Favourite - Riverpod State Management',
+        icon: Icons.favorite,
+        destination: FavouriteScreen(),
+      ),
+
     ];
 
     return Scaffold(
