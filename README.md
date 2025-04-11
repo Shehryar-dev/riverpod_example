@@ -128,7 +128,7 @@ lib/examples/favourite_app/
     └── favourite_screen.dart     # Main screen with search field, filter, and UI
 ```
 ---
-## 8. 👤 User List App (FutureProvider Example)
+### 8. 👤 User List App (FutureProvider Example)
 
 A practical example showing how to fetch user data from an API using `FutureProvider`. This demonstrates clean separation of network logic, model, provider, and UI.
 
