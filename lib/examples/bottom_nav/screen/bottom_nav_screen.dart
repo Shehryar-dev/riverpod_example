@@ -20,7 +20,7 @@ class BottomNavScreen extends ConsumerWidget {
           onTap: (index) => ref.read(bottomNavProvider.notifier).state = index,
           selectedItemColor: Colors.deepPurple,
           unselectedItemColor: Colors.grey.shade400,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.indigo.shade900,
           showUnselectedLabels: false,
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
