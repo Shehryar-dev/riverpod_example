@@ -165,6 +165,30 @@ An example showing how to use `StreamProvider` to handle real-time updates. This
 
 > 📂 Path: lib/examples/time_app/
 ---
+### 10. 👨‍💼 User Detail App (FutureProvider.family Example)
+
+This example showcases the use of `FutureProvider.family` to dynamically fetch user details based on a passed `userId`. It demonstrates how to pass arguments to providers for reusable logic.
+
+- ✅ Uses `FutureProvider.family<User, int>` for ID-based user fetching
+- ✅ Fetches from REST API (`https://reqres.in/api/users/{id}`)
+- ✅ Navigates from user list to user detail screen
+- ✅ Real-time loading, error, and data display
+- ✅ Clean separation of model, provider, and screens
+
+> 📂 Path: `lib/examples/user_detail_app/`
+```
+lib/examples/user_list_app/
+│
+├── model/
+│   └── user_model.dart           # Data model for User API response
+│
+├── provider/
+│   └── user_list_provider.dart    # FutureProvider fetching user data
+│
+└── screens/
+    └── user_screen.dart     # Screen displaying user list with avatar & name
+```
+---
 ## 🚀 Getting Started
 
 ### 🔧 Setup
