@@ -2,9 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../provider/nav_provider.dart';
-import '../pages/home_page.dart';
-import '../pages/search_page.dart';
-import '../pages/profile_page.dart';
 
 class BottomNavScreen extends ConsumerWidget {
   const BottomNavScreen({super.key});
@@ -13,14 +10,9 @@ class BottomNavScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final currentIndex = ref.watch(bottomNavProvider);
 
-    final List<Widget> pages = const [
-      HomePage(),
-      SearchPage(),
-      ProfilePage(),
-    ];
 
     return Scaffold(
-      body: pages[currentIndex],
+      body: allPages[currentIndex],
       bottomNavigationBar: ClipRRect(
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         child: BottomNavigationBar(
