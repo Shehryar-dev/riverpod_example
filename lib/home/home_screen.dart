@@ -10,6 +10,7 @@ import 'package:riverpod_example/examples/todo_app/screen/todo_screen.dart';
 import 'package:riverpod_example/examples/user_list_app/screen/user_screen.dart';
 
 import '../examples/multiple_states/multi_states_screen.dart';
+import '../examples/user_detail_app/screen/user_detail_list_screen.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -73,7 +74,12 @@ class HomeScreen extends StatelessWidget {
         icon: Icons.access_time_filled,
         destination: TimeScreen(),
       ),
-
+      _ExampleItem(
+        title: 'User Detail (Family Provider)',
+        subtitle: 'Fetch user by ID using FutureProvider.family',
+        icon: Icons.group,
+        destination: const UserListScreen(),
+      ),
     ];
 
     return Scaffold(
