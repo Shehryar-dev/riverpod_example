@@ -240,7 +240,6 @@ flutter_riverpod: ^2.4.0
 ## 📚 Upcoming Examples
 
 More Riverpod examples will be added soon:
-- 📄 Todo List App
 - 🛒 Cart Management
 - 🎨 Theme Switcher
 - 📍 Location Provider
