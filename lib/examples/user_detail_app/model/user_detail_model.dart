@@ -5,12 +5,11 @@ class UserDetailModel{
 
   UserDetailModel({required this.id, required this.name, required this.email});
 
-
-  factory UserDetailModel.fromJson(Map<String, dynamic> json){
+  factory UserDetailModel.fromJson(Map<String, dynamic> json) {
     return UserDetailModel(
-        id: json['id'],
-        name: json['name'],
-        email: json['email']);
+      id: json['id'],
+      name: json['first_name'] + ' ' + json['last_name'],
+      email: json['email'],
+    );
   }
-
 }
