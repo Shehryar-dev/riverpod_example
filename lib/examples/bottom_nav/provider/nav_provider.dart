@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../pages/home_page.dart';
 import '../pages/search_page.dart';
 import '../pages/profile_page.dart';
+
+
 final bottomNavProvider = StateProvider<int>((ref) => 0);
 
 

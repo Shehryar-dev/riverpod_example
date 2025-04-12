@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:riverpod_example/examples/bottom_nav/screen/bottom_nav_screen.dart';
 import 'package:riverpod_example/examples/counter_app/counter_app.dart';
 import 'package:riverpod_example/examples/favourite_app/screen/favourite_screen.dart';
 import 'package:riverpod_example/examples/slider/slider.dart';
@@ -80,6 +81,13 @@ class HomeScreen extends StatelessWidget {
         icon: Icons.group,
         destination: const UserListScreen(),
       ),
+      _ExampleItem(
+        title: 'Bottom Navigation App',
+        subtitle: 'Persistent BottomNavigationBar with Page Switching',
+        icon: Icons.navigation,
+        destination: const BottomNavScreen(),
+      ),
+
     ];
 
     return Scaffold(
