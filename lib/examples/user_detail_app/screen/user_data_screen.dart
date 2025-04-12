@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -12,7 +13,14 @@ class UserDetailScreen extends ConsumerWidget {
     final userAsync = ref.watch(userProviderFamily(userId));
 
     return Scaffold(
-      appBar: AppBar(title: Text('User $userId')),
+      appBar: AppBar(title: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(CupertinoIcons.profile_circled),
+          SizedBox(width: 12,),
+          Text('User $userId'),
+        ],
+      )),
       body: Center(
         child: userAsync.when(
           data: (user) => Column(
