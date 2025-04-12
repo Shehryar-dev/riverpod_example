@@ -190,6 +190,33 @@ lib/examples/user_detail_app/
     └── user_detail_list_screen.dart    # Screen with list of user IDs
 ```
 ---
+### 8. 🔽 Bottom Navigation App
+A stylish bottom navigation bar app using StateProvider<int> to switch between Home, Search, and Profile screens.
+
+- ✅ Persistent navigation state
+- ✅ Three tabs with icon & label
+- ✅ Clean separation of logic using providers
+- ✅ Responsive & minimal layout
+
+> 📂 Path: lib/examples/bottom_nav/
+
+````
+lib/
+└── examples/
+    └── bottom_nav/
+        ├── screen/
+        │   └── bottom_nav_screen.dart
+        ├── provider/
+        │   └── nav_provider.dart
+        └── pages/
+            ├── home_page.dart
+            ├── search_page.dart
+            └── profile_page.dart
+
+````
+---
+
+
 ## 🚀 Getting Started
 
 ### 🔧 Setup

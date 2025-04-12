@@ -12,15 +12,16 @@ class BottomNavScreen extends ConsumerWidget {
 
 
     return Scaffold(
+      backgroundColor: Colors.black45,
       body: allPages[currentIndex],
       bottomNavigationBar: ClipRRect(
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         child: BottomNavigationBar(
           currentIndex: currentIndex,
           onTap: (index) => ref.read(bottomNavProvider.notifier).state = index,
-          selectedItemColor: Colors.deepPurple,
+          selectedItemColor: Colors.redAccent,
           unselectedItemColor: Colors.grey.shade400,
-          backgroundColor: Colors.indigo.shade900,
+          // backgroundColor: Colors.indigo.shade900,
           showUnselectedLabels: false,
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
