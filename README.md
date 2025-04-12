@@ -177,16 +177,17 @@ This example showcases the use of `FutureProvider.family` to dynamically fetch u
 
 > 📂 Path: `lib/examples/user_detail_app/`
 ```
-lib/examples/user_list_app/
+lib/examples/user_detail_app/
 │
 ├── model/
-│   └── user_model.dart           # Data model for User API response
+│   └── user_detail_model.dart           # User model (id, name, email) 
 │
 ├── provider/
-│   └── user_list_provider.dart    # FutureProvider fetching user data
+│   └── user_detail_provider.dart    #fetching user by ID
 │
 └── screens/
-    └── user_screen.dart     # Screen displaying user list with avatar & name
+    └── user_data_screen.dart # Shows detail of selected
+    └── user_detail_list_screen.dart    # Screen with list of user IDs
 ```
 ---
 ## 🚀 Getting Started
