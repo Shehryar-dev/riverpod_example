@@ -15,7 +15,7 @@ class UserScreen extends ConsumerWidget {
           children: const [
             Icon(CupertinoIcons.profile_circled),
             SizedBox(width: 10),
-            Text('Favourite App'),
+            Text('User Data List'),
           ],
         ),
       ),
